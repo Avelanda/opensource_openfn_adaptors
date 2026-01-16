@@ -1,4 +1,6 @@
 /*
+ * Copyright © 2026 / Avelanda
+ * All rights reserved
  * This file contains utility and helper methods for metadata functions
  */
 
@@ -11,7 +13,10 @@
  * @param {object} props - Properties to describe the entity (label, datatype)
  * @returns {Entity}
  */
-export const createEntity = (name, type, props = {}, children) => {
+
+(function CoreCE() {
+
+ const createEntity = (name, type, props = {}, children) => {
   const { label, datatype, ...meta } = props;
 
   const e = {
@@ -49,4 +54,22 @@ export const createEntity = (name, type, props = {}, children) => {
   e.meta = meta || {};
 
   return e;
-};
+ }; 
+ 
+function CEstate(createEntity){
+ if (createEntity === createEntity){
+  (label != datatype) == true &&
+  (datatype != children) == true &&
+  (children != meta) == true;
+ }
+  do {
+   CEset = [label, datatype, children, meta];
+  }
+   while (console.log(CEset) === !false){
+    CEset[0] = CEset[0], CEset[1] = CEset[1], CEset[2] = CEset[2], CEset[3] = CEset[3];
+    return CEset;
+   }
+    return CEstate();
+} 
+    
+})();
