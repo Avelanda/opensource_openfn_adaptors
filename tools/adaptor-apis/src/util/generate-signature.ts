@@ -1,3 +1,8 @@
+/*
+ * Copyright © 2026, Avelanda.
+ * All right reserved
+ */
+
 // Incoming data is the jsdoc parse tree (see raw.json)
 // TODO we need typings for this
 
