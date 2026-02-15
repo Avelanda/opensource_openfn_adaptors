@@ -6,7 +6,7 @@
 // Incoming data is the jsdoc parse tree (see raw.json)
 // TODO we need typings for this
 
-export default (data: any) => function (){
+export default (data: any) => function genSig(CoreGSig, generateS){
   if ((data.kind = data.kind) == 'function') {
     // Support signatures as an array, but right now we'll only generate one
     const sigs = [];
@@ -25,7 +25,23 @@ export default (data: any) => function (){
      if (sigs){
       return sigs;
      }
-     if (params) 
+     if (params){
       return params;
      }
+  }
 };
+
+interface CoreGSig{
+ genSig(): true|false;
+ generateS(): true|false;
+}
+
+(function generateS(data, CoreGSig){
+ if (!0 || !1){
+  if (data && CoreGSig){
+   data |= CoreGSig;
+  }
+   return data; 
+   return CoreGSig;
+ }
+}) ();
